@@ -1,7 +1,7 @@
 body{
     overflow-x: hidden;
     margin:0;
-    background-image: linear-gradient(cyan ,green);
+    background-image: linear-gradient(cyan ,lightgrey,grey);
 
 }
 
@@ -73,7 +73,12 @@ a{
     margin-top: 0;
     padding:0 55px;
 }
-
+#city
+{
+    width: 500px; 
+    height: 500px;
+    border-radius: 35%;
+}
 
 .About 
 {
@@ -93,6 +98,7 @@ a{
     color:darkorange;
     font-family: 'Petit Formal Script', cursive; 
   }
+  
 
   #spec
   {
@@ -113,6 +119,10 @@ a{
       color: darkmagenta;
       font-family: 'Petit Formal Script', cursive; 
       text-align: center;
+      /* /* display: block;  */
+    padding: 20px;
+    margin:10px;
+     /* width: 50%; */
       
   }
   
@@ -187,68 +197,7 @@ a{
   background: #125688;
   color: white;
 }
-@media screen and (max-width:375px)
-{   
-   /* body 
-   {
-        width:100%;
-        height:100%;
-   } */
-    nav :not(:first-child)
-    {
-        display: none;
-    }
-    span
-    {
-        font-size:35px;
-    }
-    #tag
-    {
-        font-size: 10px;
-    }
-    .hero
-    {   
-        width:100%;
-        height:auto;
-        background-size: contain; 
-    }
-    
-    .desc
-    {
-        font-family: 'Kaushan Script', cursive;
-        font-size:10px;
 
-    }
-    .About
-    {
-        /* width: 100%; */
-        /* display: block; */
-        display:flex;
-        justify-content: center;
-        flex-direction:column;
-    }
-    .About > div
-    {
-        flex:100%;
-        font-size: 20px;
-        
-    }
-    #city
-    {
-        width:100px;
-        height: 200px;
-    }
-    #phone 
-    {
-        display: none;
-      
-    }
-    .features
-    {
-        width:100%;
-        display: block;
-    }
-}
 @media screen and (min-width:280px) and (max-width:592px)
 {   
     nav :not(:first-child)
@@ -266,15 +215,29 @@ a{
     .hero
     {   
         width:100%;
-        height:auto;
+        height:35%;
         background-size: contain; 
     }
     
     .desc
     {
         font-family: 'Kaushan Script', cursive;
-        font-size:35px;
+        font-size:20px;
+        bottom:0;
+    right:0px;
+    background-color:transparent;
+    color:lightgray;
+    padding-left :20px;
     }
+    #city
+{
+    width: 90%; 
+    height: 70%;
+    border-radius: 35%;
+    background-size:contain;
+    padding-left:20px;
+}
+   
     .About
     {
         /* width: 100%; */
@@ -284,13 +247,11 @@ a{
     .About > div
     {   flex:100%;
         font-size: 20px;
+        margin:0;
+        padding:10px;
         
     }
-    #city
-    {
-        width:275px;
-        height: auto;
-    }
+    
     #phone 
     {
         display: none;
@@ -306,7 +267,8 @@ a{
     {
         flex:50%;
         width:50%;
-        text-align: end;
+        text-align: center;
+        padding-left:20px;
     }
 }
 @media screen and (min-width:593px) and (max-width:926px) 
@@ -326,7 +288,7 @@ a{
     .hero
     {   
         width:100%;
-        height:100%;
+        height:80%;
         background-size: contain; 
     }
     .desc
@@ -349,4 +311,24 @@ a{
         font-size: 20px;
         
     }
+    #phone 
+    {
+        display:none;
+    }
+    .features
+  {
+      display: flex;
+      flex-wrap: nowrap;
+      
+  }
+ 
+  .features > div
+  {
+      flex: 50%;
+      color: darkmagenta;
+      font-family: 'Petit Formal Script', cursive; 
+      text-align: center;
+      
+  }
+  
 }
