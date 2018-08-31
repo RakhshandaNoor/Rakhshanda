@@ -1,334 +1,317 @@
-body{
-    overflow-x: hidden;
-    margin:0;
-    background-image: linear-gradient(cyan ,lightgrey,grey);
+/* Styling for Smart Park */
 
+body {
+    overflow-x: hidden;
+    margin: 0;
+    background-image: linear-gradient(cyan, lightgrey, grey);
 }
 
-#tag
-{
-    font-size:20px;
+/* tag line */
+
+#tag {
+    font-size: 20px;
     font-family: 'Petit Formal Script', cursive;
     text-align: left;
-    color:red;
+    color: red;
 }
-.webname
-{
+
+/* header */
+
+.webname {
     display: flex;
     color: darkmagenta;
     flex-wrap: nowrap;
     justify-content: space-evenly;
 }
-.webname > div
-{
+
+.webname>div {
     margin-top: 50px;
     padding: 20px;
     font-family: 'Kaushan Script', cursive;
-    font-size:60px;
-    
+    font-size: 60px;
 }
 
-nav
-{
-    background:wheat;
-    color:black;
+/* navigation bar */
+
+nav {
+    background: wheat;
+    color: black;
     top: 0;
     width: 100%;
     position: fixed;
 }
-nav li
-{   
 
+nav li {
     display: inline;
     font-family: 'Kaushan Script', cursive;
     font-size: 20px;
 }
- a:hover
-{
+
+a:hover {
     color: gray;
     font-size: 30px;
-    
 }
+
+/* hero image */
 
 .hero {
     width: 100%;
     height: 700px;
     background: url("../image/parking.jpg") no-repeat;
-
 }
-.desc 
-{
 
-     font-family: 'Kaushan Script', cursive;
-    font-size:40px;
+.desc {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 40px;
     text-align: bottom center;
-    bottom:20px;
-    right:15px;
-    background-color:transparent;
-    color:lightgray;
-    padding :20px;
+    bottom: 20px;
+    right: 15px;
+    background-color: transparent;
+    color: lightgray;
+    padding: 20px;
 }
 
-a{
+a {
     margin-top: 0;
-    padding:0 55px;
+    padding: 0 55px;
 }
-#city
-{
-    width: 500px; 
+
+#city {
+    width: 500px;
     height: 500px;
     border-radius: 35%;
 }
 
-.About 
-{
-    justify-content:flex-end;
+/*  About the Smart Park*/
+
+.About {
+    justify-content: flex-end;
     display: flex;
-    
     flex-wrap: nowrap;
-  }
-  
-  .About > div 
-  {
-    
-    flex:50%;
+}
+
+.About>div {
+    flex: 50%;
     margin: 10px;
     padding: 20px;
     font-size: 30px;
-    color:darkorange;
-    font-family: 'Petit Formal Script', cursive; 
-  }
-  
+    color: darkorange;
+    font-family: 'Petit Formal Script', cursive;
+}
 
-  #spec
-  {
-      text-align:center;
-      color:darkmagenta;
-      font-size:40px;
-       font-family: 'Kaushan Script',cursive; 
-  }
-  .features
-  {
-      display: flex;
-      flex-wrap: nowrap;
-      
-  }
-  .features > div
-  {
-      flex: 33.3%;
-      color: darkmagenta;
-      font-family: 'Petit Formal Script', cursive; 
-      text-align: center;
-      /* /* display: block;  */
-    padding: 20px;
-    margin:10px;
-     /* width: 50%; */
-      
-  }
-  
-
-  #phone
-  {
-      text-align: center;
-      
-  }
-  #phone img
-  {
-      width:100%;
-      height:400px;
-
-  }
-  #app
-  { font-style: serif;
-    
+#spec {
+    text-align: center;
     color: darkmagenta;
-  }
-  #app img
-  {
-    width:200px; 
-    height:100px;
-  }
-  footer
-  {
+    font-size: 40px;
+    font-family: 'Kaushan Script', cursive;
+}
+
+/* Specifications */
+
+.features {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.features>div {
+    flex: 33.3%;
+    color: darkmagenta;
+    font-family: 'Petit Formal Script', cursive;
+    text-align: center;
+    padding-right: 30px;
+    margin: 10px;
+}
+
+.icon {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+#phone {
+    text-align: center;
+}
+
+#phone img {
+    width: 100%;
+    height: 400px;
+}
+
+#app {
+    font-style: serif;
+    color: darkmagenta;
+}
+
+#app img {
+    width: 200px;
+    height: 100px;
+}
+
+footer {
     background: wheat;
     display: flex;
     justify-content: space-evenly;
-  }
+}
 
-  .fa {
+.fa {
     padding: 20px;
     font-size: 30px;
     width: 50px;
     text-align: center;
     text-decoration: none;
     margin: 5px 2px;
-    
-  }
-  .fa:hover {
+}
+
+.fa:hover {
     opacity: 0.7;
 }
 
 .fa-facebook {
-  background: #3B5998;
-  color: white;
+    background: #3B5998;
+    color: white;
 }
 
 .fa-twitter {
-  background: #55ACEE;
-  color: white;
+    background: #55ACEE;
+    color: white;
 }
 
 .fa-google {
-  background: #dd4b39;
-  color: white;
+    background: #dd4b39;
+    color: white;
 }
 
 .fa-linkedin {
-  background: #007bb5;
-  color: white;
+    background: #007bb5;
+    color: white;
 }
 
 .fa-youtube {
-  background: #bb0000;
-  color: white;
+    background: #bb0000;
+    color: white;
 }
 
 .fa-instagram {
-  background: #125688;
-  color: white;
+    background: #125688;
+    color: white;
 }
 
-@media screen and (min-width:280px) and (max-width:592px)
-{   
-    nav :not(:first-child)
-    {
+/* Media queries */
+
+@media screen and (min-width:320px) and (max-width:592px) {
+    .skip {
         display: none;
     }
-    span
-    {
-        font-size:50px;
+    #x1, #x2 {
+        display: block;
     }
-    #tag
-    {
+    #x1 {
+        float: left;
+    }
+    #x2 {
+        float: right;
+    }
+    span {
+        font-size: 50px;
+    }
+    #tag {
         font-size: 20px;
     }
-    .hero
-    {   
-        width:100%;
-        height:35%;
-        background-size: contain; 
+    .hero {
+        width: 100%;
+        height: 45%;
+        background-size: contain;
     }
-    
-    .desc
-    {
+    .desc {
         font-family: 'Kaushan Script', cursive;
-        font-size:20px;
-        bottom:0;
-    right:0px;
-    background-color:transparent;
-    color:lightgray;
-    padding-left :20px;
+        font-size: 20px;
+        bottom: 0;
+        right: 0px;
+        background-color: transparent;
+        color: lightgray;
+        padding-left: 20px;
     }
-    #city
-{
-    width: 90%; 
-    height: 70%;
-    border-radius: 35%;
-    background-size:contain;
-    padding-left:20px;
-}
-   
-    .About
-    {
+    #city {
+        width: 90%;
+        height: 70%;
+        border-radius: 35%;
+        background-size: contain;
+        padding-left: 20px;
+    }
+    .About {
         /* width: 100%; */
         display: block;
         flex-wrap: wrap;
     }
-    .About > div
-    {   flex:100%;
+    .About>div {
+        flex: 100%;
         font-size: 20px;
-        margin:0;
-        padding:10px;
-        
+        margin: 0;
+        padding: 10px;
     }
-    
-    #phone 
-    {
+    #phone {
         display: none;
-      
     }
-    .features
-    {
-          
+    .features {
         /* width:100%; */
         display: block;
     }
-    .features > div
-    {
-        flex:50%;
-        width:50%;
+    .features>div {
+        flex: 50%;
+        width: 50%;
         text-align: center;
-        padding-left:20px;
+        padding-left: 20px;
     }
 }
-@media screen and (min-width:593px) and (max-width:926px) 
-{
-    nav :not(:first-child)
-    {
+
+@media screen and (min-width:593px) and (max-width:926px) {
+    .skip {
         display: none;
     }
-    span
-    {
-        font-size:40px;
+    #x1, #x2 {
+        display: block;
     }
-    #tag
-    {
+    #x1 {
+        float: left;
+    }
+    #x2 {
+        float: right;
+    }
+    span {
+        font-size: 40px;
+    }
+    #tag {
         font-size: 20px;
     }
-    .hero
-    {   
-        width:100%;
-        height:80%;
-        background-size: contain; 
+    .hero {
+        width: 100%;
+        height: 80%;
+        background-size: contain;
     }
-    .desc
-    {
-        
-        font-size:30px;
-
+    .desc {
+        font-size: 30px;
     }
-    .About
-    {
-        
-        display:block;
-        /* justify-content: center; */
-        flex-direction:column;
+    .About {
+        display: block;
+        flex-direction: column;
         flex-wrap: wrap;
     }
-    .About > div
-    {
-        flex:100%;
+    .About>div {
+        flex: 100%;
         font-size: 20px;
-        
     }
-    #phone 
-    {
-        display:none;
+    #phone {
+        display: none;
     }
-    .features
-  {
-      display: flex;
-      flex-wrap: nowrap;
-      
-  }
- 
-  .features > div
-  {
-      flex: 50%;
-      color: darkmagenta;
-      font-family: 'Petit Formal Script', cursive; 
-      text-align: center;
-      
-  }
-  
+    .features {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    .features>div {
+        flex: 50%;
+        color: darkmagenta;
+        font-family: 'Petit Formal Script', cursive;
+        text-align: center;
+    }
 }
