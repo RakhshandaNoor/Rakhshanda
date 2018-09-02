@@ -1,19 +1,33 @@
-<html>
+<!DOCTYPE html>
+<html lang = "en">
 <head>
+    <meta charset="utf-8"/>
     <title>Smart Park</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">"
-    <link rel="icon" type="image/ico" href="image/car.jpeg">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Monoton|Petit+Formal+Script" rel="stylesheet">
+    <link rel="shortcut icon"  href="image/favicon.ico" />
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Petit+Formal+Script" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <script src="javascript/functionality.js"></script>
 </head>
 <body>
     <header>
         <!-- Website Name -->
+        <div class="The_drop_down" id="slider">
+                <div class="inside_drop_down"><a href="#herop" onclick="theEnableFunction('slider')"> HOME </a></div>
+                <div class="inside_drop_down"> <a href="#feature" onclick="theEnableFunction('slider')">FEATURES</a> </div>
+                <div class="inside_drop_down"><a href="#"> FACTS</a></div>
+                <div class="inside_drop_down"><a href="#"> BLOGS</a></div>
+                <div class="inside_drop_down"><a href="#"> LOGIN</a></div>
+                
+
+        </div>
         <div class="webname">
             <div>
-                <span>Smart Park<span>
-                        <br><p id="tag"><strong>drive safe park safe...</strong></p>
+                <span>Smart Park</span>
+                        <br><p class="tag"><strong>drive safe park safe...</strong></p>
             </div>
             <div>
                 <img src="image/car.jpeg" style="border-radius: 50%; width:100px;" alt="logo">
@@ -21,21 +35,21 @@
         </div>
         <nav>   
             <ul>
-                <li id ="x1" ><a href="#" >HOME</a></li>
-                <li class="skip"><a href="#" >FEATURES</a></li>
+                <li id ="x1" ><a href="#herop" >HOME</a></li>
+                <li class="skip"><a href="#feature" >FEATURES</a></li>
                 <li class="skip"><a href="#" >FACTS</a></li>
                 <li class="skip"><a href="#" >BLOGS</a></li>
                 <li class="skip"><a href="#" >CONTACT</a></li>
                 <li class="skip"><a href="#" >LOGIN</a></li>
-                <li id ="x2"><a href="#" ><img src="image/option.png" style="width:25px; height:25px;"></a></li>
+                <li id ="x2"><a href="#" ><img src="image/option.png" style="width:25px; height:25px;" alt= "opotions" onclick="theEnableFunction('slider')"></a></li>
             </ul>
         </nav>
     </header>
     <!-- Hero  -->
-    <div class="hero">
+    <div class="hero" >
 
-        <div class="desc">
-            <p> Smart Parking Platform provides a world-class unique set of technology and data capabilities to solve for
+        <div class="desc" id="herop">
+            <p > Smart Parking Platform provides a world-class unique set of technology and data capabilities to solve for
                 parking management and congestion in our cities.
             </p>
         </div>
@@ -46,13 +60,13 @@
             <ul>
                 <li>
                     platform designed to solve parking problems for Smart cities
-                </li><br>
+                </li>
                 <li>
                     Disruptive parking management
-                </li><br>
+                </li>
                 <li>
                     discovery for urban commuters, parking lot operators & owners, city planners & administrators
-                </li><br>
+                </li>
                 <li>
                     Helping over 30 cities to improve their urban mobility
                 </li>
@@ -63,7 +77,7 @@
     <br>
    <!-- Specifications -->
     <p id="spec">FEATURES</p>
-    <div class="features">
+    <div class="features" id ="feature">
         <div class="icons">
             <img src="image/location.jpeg" alt="location">
             <a href="#"><h3>Locate on maps</h3></a>
@@ -86,10 +100,10 @@
         </div>
     </div>
     <!-- app -->
-    <section id="app">
-        <p id="tag"><strong>Download the app now...</strong></p>
+    <div id="app">
+        <p class="tag"><strong>Download the app now...</strong></p>
         <a href="#"><img src="image/download.png " alt="app"></a>
-    </section>
+    </div>
     <!-- Footer -->
     <footer>
         <a href="#" class="fa fa-facebook"></a>
